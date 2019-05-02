@@ -1,0 +1,41 @@
+import { createSelector } from 'reselect';
+import { initialState } from './reducer';
+
+/**
+ * Direct selector to the loginPage state domain
+ */
+
+const selectLoginPageDomain = state => state.user || initialState;
+
+const makeSelectIsUserAuthenticated = () =>
+  createSelector(
+    selectLoginPageDomain,
+    state => state.isAuthenticated,
+  );
+
+const makeSelectErrorMessage = () =>
+  createSelector(
+    selectLoginPageDomain,
+    state => state.errorMessage,
+  );
+
+/**
+ * Other specific selectors
+ */
+
+/**
+ * Default selector used by LoginPage
+ */
+
+const makeSelectLoginPage = () =>
+  createSelector(
+    selectLoginPageDomain,
+    substate => substate,
+  );
+
+export default makeSelectLoginPage;
+export {
+  makeSelectIsUserAuthenticated,
+  makeSelectErrorMessage
+};
+

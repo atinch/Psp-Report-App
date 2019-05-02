@@ -17,7 +17,7 @@ import DateFnsUtils from '@date-io/date-fns';
 import { MuiPickersUtilsProvider, DatePicker } from 'material-ui-pickers';
 
 const styles = theme => ({
-  button: {
+  buttonRed: {
     backgroundColor: '#E91D28',
     color: 'red'
   },
@@ -94,7 +94,7 @@ function SearchFilterForm(props) {
         </FormControl>
       </div>
       <div>
-        <Button className={classes.button}
+        <Button className={classes.buttonRed}
           type="submit"
           className='button'
           color="secondary"

@@ -1,4 +1,4 @@
-# Financial House Reporting UI (using React and Redux)
+# Reporting UI (using React and Redux)
 
 # To run on your machine :
 
@@ -6,7 +6,10 @@
 - cd PspReportingApp
 - npm install && npm start
 
-# LOGIN
+# Login
 
 - api_username="demo@bumin.com.tr"
 - api_password="cjaiU8CV"
+
+# Heroku
+https://atinc-psp.herokuapp.com

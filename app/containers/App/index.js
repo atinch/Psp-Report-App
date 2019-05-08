@@ -36,12 +36,12 @@ export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - Financial House"
-        defaultTitle="Financial House"
+        titleTemplate="%s - Psp Report"
+        defaultTitle="Psp Report"
       >
-        <meta name="description" content="Financial House" />
+        <meta name="description" content="Psp Report" />
       </Helmet>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path="/" component={ReportPage} />
         <Route exact path="/report" component={ReportPage} />

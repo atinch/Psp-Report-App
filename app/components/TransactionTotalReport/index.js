@@ -84,7 +84,7 @@ TablePaginationActions.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: 800,
+    width: 1000,
     marginTop: theme.spacing.unit * 3,
   },
   table: {

@@ -89,21 +89,17 @@ TablePaginationActions.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 800,
+    maxWidth: 1000,
     width: '100%',
     marginTop: theme.spacing.unit * 3,
     marginBottom: theme.spacing.unit * 3
   },
   table: {
-    minWidth: 400,
+    minWidth: 1000,
   },
   tableWrapper: {
     overflowX: 'auto',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyItems: 'center',
-    position: 'relative'
+   
   },
   loading: {
     position: 'absolute',

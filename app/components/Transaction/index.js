@@ -29,6 +29,7 @@ const useStylesTab = makeStyles({
 });
 
 const renderDetail = (data) => {
+  
   if(!data || typeof data !== 'object') return null
   const mappedArr = Object.keys(data).map((key, ind) => (
     <tr key={ind}>
